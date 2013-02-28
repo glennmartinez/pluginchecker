@@ -1,0 +1,11 @@
+<div class="mainpage">
+<h3> Upload your System Information File </h3>
+
+<%= @minversion %>
+
+<%= form_tag 'plugin/fileloader', :multipart => true do %>
+   <label for="file">Upload text File</label> <%= file_field_tag "file" %>
+   <%= submit_tag "submit", :class => "btn btn-success" %>
+<% end %>
+
+</div>
